@@ -25,31 +25,44 @@ header {
   left: 0;
   right: 0;
 }
-.nav {
-  background-color: green;
-  float: left;
-}
 .quickLink {
   background-color: yellow;
-  right: 0;
-  float: right;
+  /* 중앙 정렬 */
+  display: flex;
+  justify-content: center;
 }
-ul {
+.quickLinkNav {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
-  overflow: hidden;
   padding: 0;
   margin-block-start: 0;
   margin-block-end: 0;
 }
-li {
-  float: left;
-  padding: 4px;
+.quickLinkNav li {
+  margin: 0 20px;
 }
-li:first-child {
-  padding-left: 0px;
+
+/* side bar */
+.sideBar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  gap: 16px;
+  font-size: 14px;
+  letter-spacing: -0.006em;
+  line-height: 1.4;
 }
-li:last-child {
-  padding-right: 0px;
+.sideBarNav {
+  list-style-type: none;
+}
+.sideBarNav li {
+  margin: 5px 0;
 }
 
 /* body */
