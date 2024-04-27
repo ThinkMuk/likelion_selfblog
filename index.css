@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  /* 중앙 정렬 */
+  margin: 30px auto;
+}
+
+/* nav */
+.navContainer {
+  padding: 16px 0;
+  overflow: hidden;
+  /* 임의 배경설정 */
+  background-color: aqua;
+  /* 중앙 정렬 */
+  width: 1080px;
+  margin: 0 auto;
+  /* nav 고정 */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav {
+  background-color: green;
+  float: left;
+}
+.quickLink {
+  background-color: yellow;
+  right: 0;
+  float: right;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+li {
+  float: left;
+  padding: 4px;
+}
+li:first-child {
+  padding-left: 0px;
+}
+li:last-child {
+  padding-right: 0px;
+}
+
+/* body */
+.bodyContainer {
+  max-width: 1080px;
+  overflow: hidden;
+  height: 800px;
+  /* 중앙 정렬 */
+  width: 1080px;
+  margin: 0 auto;
+
+  border-style: solid;
+  border-color: black;
+}
+
+/* footer */
+footer {
+  overflow: hidden;
+  background: yellow;
+  height: 80px;
+  /* 중앙 정렬 */
+  width: 1080px;
+  margin: 0 auto;
+}
