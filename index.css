@@ -58,6 +58,13 @@ header {
 .quickLinkNav li {
   margin: 0 20px;
 }
+.quickLinkNav li:hover {
+  transition: 0.5s ease-out;
+  opacity: 0.3;
+}
+.quickLinkNav li:not(:hover) {
+  transition: 0.5s ease-out;
+}
 
 /* side bar */
 .sideBar {
@@ -80,6 +87,11 @@ header {
 }
 .sideBarNav li {
   margin: 20px 0;
+}
+@media (max-width: 1400px) {
+  .sideBar {
+    display: none; /* 태그를 숨김 */
+  }
 }
 
 /* body */
@@ -155,7 +167,36 @@ header {
 .favorite h1 {
   margin: 30px 0 0 0;
 }
+.favoriteTxt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 
+  margin: 50px 0;
+}
+.favDetail {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 600px;
+  background-color: #2e313d;
+  margin: 0 10px;
+  border-radius: 25px;
+}
+.favDetail h2 {
+  margin: 20px;
+}
+.favImg {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  border-radius: 100%;
+}
+.imgDescription {
+  color: #777e95;
+  margin: 50px 30px;
+}
 /* footer */
 footer {
   overflow: hidden;
@@ -164,6 +205,10 @@ footer {
   /* 중앙 정렬 */
   width: 1080px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2e313d;
 }
 
 /* Fade InOut */
@@ -202,4 +247,5 @@ footer {
 /* #090a0d */
 /* #121319 */
 /* #2e313d */
-/* #585d6e */
+/* #777e95 */
+/* 1400 */

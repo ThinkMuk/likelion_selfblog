@@ -3,20 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Thinkmuk</title>
     <link rel="stylesheet" href="./index.css" />
     <script src="index.js"></script>
   </head>
   <body>
     <header>
-      <a href="#"><h1>&#60; Thinkmuk's Blog &#47;&#62;</h1></a>
+      <a onClick="window.location.reload()" style="cursor: pointer"
+        ><h1>&#60; Thinkmuk's Blog &#47;&#62;</h1></a
+      >
     </header>
     <div class="navContainer">
       <div class="quickLink">
         <ul class="quickLinkNav">
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Github</a></li>
-          <li><a href="#">Notion</a></li>
+          <li>
+            <img src="./src/instagram.png" style="width: 15px; height: 15px" />
+            <a href="https://www.instagram.com/think_muk/" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <img src="./src/github.png" style="width: 15px; height: 15px" />
+            <a href="https://github.com/ThinkMuk" target="_blank">Github</a>
+          </li>
+          <li>
+            <img src="./src/notion.png" style="width: 15px; height: 15px" />
+            <a
+              href="https://dour-drop-8a2.notion.site/FE-4697068319304828887921d59db9d8c0?pvs=4"
+              target="_blank"
+              >Notion</a
+            >
+          </li>
         </ul>
       </div>
     </div>
@@ -71,10 +88,38 @@
     <div class="bodyContainer" id="favorite">
       <div class="favorite">
         <h1><strong>F</strong>avorite</h1>
-        취미: 드럼🥁, 게임🕹️, 노래방🎤
+        <div class="favoriteTxt">
+          <div class="favDetail">
+            <h2>드럼 🥁</h2>
+            <img class="favImg" src="./src/drum.JPG" />
+            <div class="imgDescription">
+              드럼은 8년정도 취미로 치고 있습니다!
+              <br />
+              중앙 밴드 동아리 팝뮤직에서 활동중이니 공연 놀러오세요~
+            </div>
+          </div>
+          <div class="favDetail">
+            <h2>게임 🕹️</h2>
+            <img class="favImg" src="./src/game.jpg" />
+            <div class="imgDescription">
+              즐겨하는 게임: 롤, 오버워치
+              <br />
+              각종 같이하는 스팀게임들도 좋아합니다 😊
+            </div>
+          </div>
+          <div class="favDetail">
+            <h2>노래 🎤</h2>
+            <img class="favImg" src="./src/sing.jpg" />
+            <div class="imgDescription">
+              노래 부르는것도 좋아하고 <br />듣는것도 좋아합니다!
+              <br />
+              좋아하는 가수 : 쏜애플, 터치드, yuuri
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <footer></footer>
+    <footer>Website Published by Thinkmuk</footer>
   </body>
 </html>

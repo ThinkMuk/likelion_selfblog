@@ -12,14 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'aboutMe':
               //   console.log('Element 1 mount');
               aboutMe.style.fontWeight = 'bold';
+              aboutMe.style.color = '#5780cd';
               break;
             case 'MBTI':
               //   console.log('Element 2 mount');
               MBTI.style.fontWeight = 'bold';
+              MBTI.style.color = '#5780cd';
               break;
             case 'favorite':
               //   console.log('Element 3 mount');
               favorite.style.fontWeight = 'bold';
+              favorite.style.color = '#5780cd';
               break;
           }
         } else {
@@ -28,14 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'aboutMe':
               //   console.log('Element 1 unmount');
               aboutMe.style.fontWeight = 'normal';
+              aboutMe.style.color = 'white';
               break;
             case 'MBTI':
               //   console.log('Element 2 unmount');
               MBTI.style.fontWeight = 'normal';
+              MBTI.style.color = 'white';
               break;
             case 'favorite':
               //   console.log('Element 3 unmount');
               favorite.style.fontWeight = 'normal';
+              favorite.style.color = 'white';
               break;
           }
         }
@@ -62,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     {
-      threshold: 0.3, // 나타날 때의 threshold
+      threshold: 0.4, // 나타날 때의 threshold
     }
   );
 
@@ -77,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     {
-      threshold: 0.2, // 사라질 때의 threshold
+      threshold: 0.3, // 사라질 때의 threshold
     }
   );
 
