@@ -100,7 +100,7 @@ header {
   overflow: hidden;
   height: 900px;
   /* 중앙 정렬 */
-  width: 1080px;
+  /* width: 1080px; */
   margin: 0 auto;
   border-top: 1px solid #2e313d;
   background-color: #121319;
@@ -178,8 +178,8 @@ header {
 .favDetail {
   display: flex;
   flex-direction: column;
-  width: 330px;
-  height: 600px;
+  max-width: 330px;
+  max-height: 600px;
   background-color: #2e313d;
   margin: 0 10px;
   border-radius: 25px;
