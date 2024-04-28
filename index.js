@@ -1,3 +1,4 @@
+// sideBar JS
 document.addEventListener('DOMContentLoaded', function () {
   let observer = new IntersectionObserver(
     (entries, observer) => {
@@ -45,5 +46,44 @@ document.addEventListener('DOMContentLoaded', function () {
   // 각 태그를 개별적으로 관찰
   document.querySelectorAll('div').forEach((div) => {
     observer.observe(div);
+  });
+});
+
+// FadeInOut JS
+document.addEventListener('DOMContentLoaded', () => {
+  // 나타날 때 사용할 Observer
+  const appearObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fadeInUp');
+          entry.target.classList.remove('fadeOutDown');
+        }
+      });
+    },
+    {
+      threshold: 0.3, // 나타날 때의 threshold
+    }
+  );
+
+  // 사라질 때 사용할 Observer
+  const disappearObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          entry.target.classList.add('fadeOutDown');
+          entry.target.classList.remove('fadeInUp');
+        }
+      });
+    },
+    {
+      threshold: 0.2, // 사라질 때의 threshold
+    }
+  );
+
+  // 대상 요소 설정
+  document.querySelectorAll('.bodyContainer').forEach((div) => {
+    appearObserver.observe(div);
+    disappearObserver.observe(div);
   });
 });
