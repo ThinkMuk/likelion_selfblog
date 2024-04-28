@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let aboutMe = document.getElementById('navAboutMe');
         let MBTI = document.getElementById('navMBTI');
         let favorite = document.getElementById('navFavorite');
+        let service = document.getElementById('navService');
         if (entry.isIntersecting) {
           // entry.target.id를 사용하여 각 태그의 ID에 따라 다른 메시지 출력
           switch (entry.target.id) {
@@ -23,6 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
               //   console.log('Element 3 mount');
               favorite.style.fontWeight = 'bold';
               favorite.style.color = '#5780cd';
+              break;
+            case 'service':
+              //   console.log('Element 3 mount');
+              service.style.fontWeight = 'bold';
+              service.style.color = '#5780cd';
               break;
           }
         } else {
@@ -42,6 +48,11 @@ document.addEventListener('DOMContentLoaded', function () {
               //   console.log('Element 3 unmount');
               favorite.style.fontWeight = 'normal';
               favorite.style.color = 'white';
+              break;
+            case 'service':
+              //   console.log('Element 3 mount');
+              service.style.fontWeight = 'normal';
+              service.style.color = 'white';
               break;
           }
         }
