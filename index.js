@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     {
-      threshold: 0.4, // 나타날 때의 threshold
+      threshold: 0.3, // 나타날 때의 threshold
     }
   );
 
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     {
-      threshold: 0.3, // 사라질 때의 threshold
+      threshold: 0.15, // 사라질 때의 threshold
     }
   );
 
