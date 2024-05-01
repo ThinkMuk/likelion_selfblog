@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     },
-    { threshold: 0.7 }
+    { threshold: 0.45 }
   );
   // 각 태그를 개별적으로 관찰
   document.querySelectorAll('div').forEach((div) => {
